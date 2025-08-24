@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h2>ข้อมูลนักศึกษา</h2>
+    <script>
+        let name = prompt("กรุณาใส่ชื่อ");
+        let nickname = prompt("กรุณาใส่ชื่อเล่น");
+        let ageInput = prompt("กรุณาใส่อายุ");
+        let studentID = prompt("กรุณาใส่รหัสนักศึกษาของคุณ");
+        let ethnicity = prompt("กรุณาใส่เชื้อชาติ");
+        let nationality = prompt("กรุณาใส่สัญชาติ");
+        let eligion = prompt("กรุณาใส่ศาสนา");
+        let weight = prompt("กรุณาใส่น้ำหนัก");
+        let height = prompt("กรุณาใส่ส่วนสูง");
+        let email = prompt("กรุณาใส่อีเมล");
+        let telephonenumber = prompt("กรุณาใส่เบอร์โทรศัพท์");
+        let province = prompt("กรุณาใส่จังหวัด");
+        let district = prompt("กรุณาใส่อำเภอ");
+        let Subdistrict = prompt("กรุณาใส่ตำบล");
+        let Postalnumber = prompt("กรุณาใส่เลขไปรษณีย์");
+        console.log(typeof (ageInput));
+        let age = parseInt(ageInput);
+        console.log(typeof (age));
+        let birthYear = 2568 - age;
+        let mergeName = `คุณชื่อ:${name}\nชื่อเล่น:${nickname}\nคุณมีอายุ:${age}ปี\nรหัสนักศึกษา:${studentID}\nเชื้อชาติ:${ethnicity}\nสัญชาติ:${nationality}\nศาสนา:${eligion}\nน้ำหนัก:${ weight}\nส่วนสูง:${height}\nอีเมล:${email}\nเบอร์โทรศัพท์:${telephonenumber}\nจังหวัด:${province}\nอำเภอ:${district}\nตำบล:${Subdistrict}\nเลขไปรษณีย์:${Postalnumber}\n ปีปัจจุบัน 2568 คุณเกิดในปี พ.ศ ${birthYear} `;
+       console.log(mergeName);
+    </script>
+</body>
+
+</html>
+
+
+
+
