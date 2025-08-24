@@ -1,6 +1,6 @@
 const express = require('express'); // สรา้ ง้express เพื่อสร างเว็บเซิร์ฟเวอร์
 const path = require('path'); //จัดการเส นทางไฟล์และโฟลเดอร์
-const menuRoutes = require('./routes/menuRoutes');
+const menuRoutes = require('../routes/menuRoutes');
 const app = express(); // สร างแอป้Express
 // ตั้งค่า EJS เป็น้template engine
 app.set('view engine', 'ejs');
@@ -13,7 +13,4 @@ app.use('/', menuRoutes);
 const PORT = 3000;
 app.listen(PORT, () => {
 console.log(`Server is running at http://localhost:${PORT}`);
-// const menuRoutes = require('./routes/menuRoutes');
-// app.use('/', menuRoutes);
-
 });
